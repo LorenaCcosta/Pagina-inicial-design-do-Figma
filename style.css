@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Manrope";
+}
+
+#frete-info {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #923e12;
+  height: 43px;
+}
+
+header {
+  color: #b7521c;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  gap: 0px;
+}
+
+input {
+  border: 2px solid #b7521c;
+  border-radius: 6px 0px 0px 6px;
+  width: 439px;
+  height: 30px;
+  padding-left: 12px;
+}
+
+#logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background-color: #ffffff;
+  height: 110px;
+}
+
+#lupa {
+  background-color: #b7521c;
+  border-radius: 0px 6px 6px 0px;
+  padding: 5px;
+}
+
+#buy-button {
+  height: 36px;
+  border: 2px solid #b7521c;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #b7521c;
+  font-weight: 600;
+}
+
+#texto-principal {
+  margin: 6% 4% 6% 10%;
+}
+
+#firts-sect {
+  display: flex;
+  background-color: #b7521c;
+  height: 418px;
+  justify-content: center;
+}
+
+h3 {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 34px;
+  font-family: "Maven Pro";
+}
+
+#text {
+  color: #ffffff;
+  font-size: 22px;
+}
+#coffee {
+  margin: 0px 8% 0px 0px;
+}
+
+#texto2{
+    font-size: 30px;
+    color: #923e12;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+#filtro{
+    display: flex;
+    gap: 16px;
+    color: #923e12;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    
+}
+
+@media screen and (max-width: 1320px){
+  #brPesquisa{
+    display: none;
+  }
+}
