@@ -1,12 +1,11 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Manrope";
 }
-
 #frete-info {
   display: flex;
-  color: #ffffff;
+  color: #fff;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -14,77 +13,65 @@ body {
   width: 100%;
   height: 43px;
 }
-
 header a:visited {
   color: #b7521c;
   font-weight: 500;
   font-size: 18px;
 }
-
 nav {
   display: flex;
-  gap: 0px;
+  gap: 0;
 }
-
 input {
   border: 2px solid #b7521c;
-  border-radius: 6px 0px 0px 6px;
+  border-radius: 6px 0 0 6px;
   width: 439px;
   height: 30px;
   padding-left: 12px;
 }
-
 #logo-div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  background-color: #ffffff;
+  background-color: #fff;
   height: 110px;
   font-weight: 600;
 }
-
 #lupa {
   background-color: #b7521c;
-  border-radius: 0px 6px 6px 0px;
+  border-radius: 0 6px 6px 0;
   padding: 5px;
 }
-
 #buy-button {
   border: 2px solid #b7521c;
   border-radius: 12px;
   padding: 6px;
   font-weight: 600;
 }
-
 #texto-principal {
   margin: 6% 4% 6% 10%;
 }
-
 #first-sect {
   display: flex;
   background-color: #b7521c;
   height: 418px;
   justify-content: center;
 }
-
 h3 {
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   font-size: 34px;
   font-family: "Maven Pro";
 }
-
 #text {
-  color: #ffffff;
+  color: #fff;
   font-size: 22px;
   font-weight: 300;
 }
-
 #coffee {
-  margin: 0px 8% 0px 0px;
+  margin: 0 8% 0 0;
 }
-
 #texto2 {
   font-size: 30px;
   color: #923e12;
@@ -92,7 +79,6 @@ h3 {
   display: flex;
   justify-content: center;
 }
-
 #filtro {
   display: flex;
   gap: 2%;
@@ -102,16 +88,13 @@ h3 {
   justify-content: center;
   font-size: 22px;
 }
-
 .estrelas-avaliação {
   color: #ecae39;
   font-size: 30px;
 }
-
 a {
   text-decoration: none;
 }
-
 .info-produtos {
   font-size: 22px;
   display: flex;
@@ -119,49 +102,43 @@ a {
   flex-direction: column;
   text-align: center;
 }
-
 .btn-produto {
   border-radius: 100px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #923e12;
   font-size: 28px;
   padding-left: 10px;
   padding-right: 10px;
   color: #923e12;
 }
-
 .numero-avaliação a:visited {
   color: #000;
 }
-
 .btn-produto-adicionar {
   border-radius: 25px;
   background-color: #923e12;
   font-size: 16px;
   padding: 12px 18px;
-  color: #ffffff;
-  border: none;
+  color: #fff;
+  border: 0;
 }
-
 .input-produto {
   width: 30px;
   background-color: #f5f5f5;
-  border: none;
+  border: 0;
   color: #923e12;
   font-size: 28px;
   font-weight: 600;
 }
-
 .btn-produto-menos {
   border-radius: 100px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #923e12;
   font-size: 28px;
   padding-left: 13px;
   padding-right: 14px;
   color: #923e12;
 }
-
 .btn-input {
   display: flex;
   justify-content: center;
@@ -170,7 +147,6 @@ a {
   gap: 10px;
   border-radius: 50px;
 }
-
 #section-produtos {
   background-color: #f5f5f5;
   display: flex;
@@ -185,18 +161,15 @@ a {
 a:visited {
   color: #0000;
 }
-
 .nome-produto a:visited {
   font-size: 22px;
   color: #923e12;
 }
-
 .img-produto {
   max-width: 100%;
   height: auto;
   padding-top: 8%;
 }
-
 #sect-btn {
   background-color: #f5f5f5;
   display: flex;
@@ -204,7 +177,6 @@ a:visited {
   align-items: center;
   padding-bottom: 8%;
 }
-
 #numero-paginas {
   background-color: #923e12;
   width: 240px;
@@ -215,200 +187,166 @@ a:visited {
   border-radius: 50px;
   gap: 14px;
 }
-
 .btn {
-  border: none;
-  color: #ffffff;
+  border: 0;
+  color: #fff;
   background-color: #923e12;
   font-weight: 600;
   font-size: 20px;
 }
-
 #btn-ativo {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 20px;
   font-size: 20px;
-  border: none;
+  border: 0;
   font-weight: 600;
   padding: 6px 12px 5px 11px;
   color: #923e12;
 }
-
 #ultimo-btn {
   background-color: #923e12;
   border-radius: 20px;
   font-size: 20px;
-  border: none;
+  border: 0;
   font-weight: 600;
   padding: 6px 12px 6px 11px;
-  color: #ffffff;
+  color: #fff;
 }
-
 h2 {
   background-color: #923e12;
   height: 136px;
   font-size: 38px;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin: 0;
 }
-
 #footer-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #logo-branco-footer {
   border-radius: 50%;
   margin-top: -6%;
   display: flex;
   justify-content: center;
 }
-
 #rodapé-info-1 {
-  color: #ffffff;
+  color: #fff;
   display: grid;
   justify-items: center;
   text-align: center;
   padding-bottom: 40px;
 }
-
 #rodapé-info-1 input {
   width: 536px;
-  border: none;
+  border: 0;
   margin-bottom: 2%;
   border-radius: 6px;
-  box-shadow: 0px 2px 4px #00000051;
+  box-shadow: 0 2px 4px #00000051;
 }
-
 #button-assinar {
   color: #b7521c;
-  border: none;
+  border: 0;
   width: 96px;
   height: 36px;
   border-radius: 12px;
 }
-
 #rodapé-info-2 {
   display: flex;
   justify-content: center;
   gap: 2%;
   padding-bottom: 4%;
 }
-
 #rodapé-info-3 {
   display: flex;
   justify-content: center;
   gap: 2%;
   padding-bottom: 38px;
 }
-
 #rodapé-info-4 {
   display: flex;
   justify-content: center;
 }
-
 .info-footer-link {
   color: #ffffff8f;
 }
-
 footer {
   background-color: #923e12;
   padding-bottom: 50px;
 }
-
 @media (max-width: 1390px) {
   #section-produtos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-
   #inputnav {
     width: 200px;
   }
-
   h3 {
     font-size: 26px;
   }
-
   #text {
     font-size: 18px;
   }
-
   #texto-principal {
-    margin: 6% 2% 0% 6%;
+    margin: 6% 2% 0 6%;
   }
-
   #coffee {
     width: 50%;
     height: 300px;
     margin-right: 10%;
   }
-
   #first-sect {
     height: 300px;
   }
-
   #texto2 {
     font-size: 26px;
   }
-
   #filtro {
     font-size: 20px;
   }
 }
-
 @media (max-width: 1280px) {
   #section-produtos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
   #inputnav {
     display: none;
   }
-
   #lupa {
     border-radius: 36%;
-    border: none;
+    border: 0;
   }
-
   h3 {
     font-size: 22px;
   }
-
   #text {
     font-size: 16px;
   }
-
   #texto-principal {
-    margin: 6% 4% 0% 6%;
+    margin: 6% 4% 0 6%;
   }
-
   #coffee {
     width: 50%;
     height: 250px;
     margin-right: 10%;
   }
-
   #first-sect {
     height: 250px;
   }
-
   #texto2 {
     font-size: 22px;
   }
-
   #filtro {
     font-size: 16px;
   }
 }
-
 @media (max-width: 820px) {
   #section-produtos {
     flex-direction: column;
@@ -417,37 +355,29 @@ footer {
     flex-direction: row;
     gap: 20px;
   }
-
   h3 {
     font-size: 18px;
   }
-
   #text {
     font-size: 12px;
   }
-
   #texto-principal {
-    margin: 4% 4% 0% 6%;
+    margin: 4% 4% 0 6%;
   }
-
   #coffee {
     width: 76%;
     height: 212px;
     margin-right: 10%;
   }
-
   #first-sect {
     height: 212px;
   }
-
   #texto2 {
     font-size: 22px;
   }
-
   #filtro {
     font-size: 16px;
   }
-
   .firts-links {
     display: none;
   }
