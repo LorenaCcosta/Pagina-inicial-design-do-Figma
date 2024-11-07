@@ -79,16 +79,16 @@ h3 {
   display: flex;
   justify-content: center;
 }
-#filtro {
+#filtro{
   display: flex;
   gap: 2%;
   color: #923e12;
   font-weight: 500;
-  display: flex;
   justify-content: center;
   font-size: 22px;
   list-style: none;
 }
+
 .estrelas-avaliação {
   color: #ecae39;
   font-size: 30px;
@@ -154,7 +154,7 @@ a {
   justify-content: center;
   padding: 6%;
   margin-top: 2%;
-  gap: 6%;
+  gap: 4%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 10%;
@@ -167,10 +167,20 @@ a:visited {
   color: #923e12;
 }
 .img-produto {
-  max-width: 100%;
+  max-width: 36%;
   height: auto;
   padding-top: 8%;
+  margin: 2%;
 }
+
+  #img-produto-kit{
+    max-width: 260px;
+  height: auto;
+  padding-bottom: 12px;
+  padding-top: 36px;
+  }
+
+
 #sect-btn {
   background-color: #f5f5f5;
   display: flex;
@@ -227,10 +237,14 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+
 }
 #logo-branco-footer {
   border-radius: 50%;
-  margin-top: -6%;
+  margin-top: -3%;
   display: flex;
   justify-content: center;
 }
@@ -242,7 +256,10 @@ h2 {
   padding-bottom: 40px;
 }
 #rodapé-info-1 input {
+  max-width: 100%;
+  height: auto;
   width: 536px;
+  height: 34px;
   border: 0;
   margin-bottom: 2%;
   border-radius: 6px;
@@ -310,6 +327,7 @@ footer {
   #filtro {
     font-size: 20px;
   }
+ 
 }
 @media (max-width: 1280px) {
   #section-produtos {
@@ -321,7 +339,7 @@ footer {
     display: none;
   }
   #lupa {
-    border-radius: 36%;
+    border-radius: 50%;
     border: 0;
   }
   h3 {
@@ -381,5 +399,39 @@ footer {
   }
   .firts-links {
     display: none;
+  }
+}
+
+@media (max-width: 400px){
+  #footer-img{
+    display: flex;
+    flex-direction: column;
+    max-width: 93%;
+    height: auto;
+    justify-content: center;
+    
+  }
+
+  #coffee { 
+    display: none;
+  }
+ #firts-sect{
+    display: grid;
+  }
+  #buy-button{
+    display: none;
+  }
+  #lupa{
+    display: none;
+  }
+  #logo-div{
+    gap: 18px;
+  }
+  #rodapé-info-1 input{
+    width: 80%;
+  }
+
+  #rodapé-info-1 p{
+    font-size: 12px;
   }
 }
