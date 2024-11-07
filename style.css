@@ -87,6 +87,7 @@ h3 {
   display: flex;
   justify-content: center;
   font-size: 22px;
+  list-style: none;
 }
 .estrelas-avaliação {
   color: #ecae39;
