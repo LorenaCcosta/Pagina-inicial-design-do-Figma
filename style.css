@@ -125,6 +125,7 @@ a {
   color: #fff;
   border: 0;
 }
+
 .input-produto {
   width: 30px;
   background-color: #f5f5f5;
@@ -150,7 +151,7 @@ a {
   gap: 10px;
   border-radius: 50px;
 }
-#section-produtos {
+.section-produtos {
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
@@ -190,7 +191,7 @@ a:visited {
   align-items: center;
   padding-bottom: 8%;
 }
-#numero-paginas {
+.numero-paginas {
   background-color: #923e12;
   width: 240px;
   height: 42px;
