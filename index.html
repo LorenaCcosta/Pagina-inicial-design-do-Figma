@@ -16,6 +16,22 @@
   </head>
   <body>
     <div>
+      <div id="div-cor-background">
+      <form>
+        <div id="entrar-conta">
+          <img id="fechar-form" src="Imagens/x.png" alt="">
+          <div>
+            <span id="text1-entrar">Entre com sua conta</span>
+            <input type="email" name="email" id="email-div-entrar" placeholder="E-mail"/>
+
+            <input type="password" name="senha" id="senha-div-entrar" placeholder="Senha" />
+            <a href="#">Esqueci a Senha</a>
+            <span>Não tenha uma conta? <a href="">Registre uma.</a></span>
+            <button type="submit">Entrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
       <header>
         <div class="info-frete">
           <img src="imagens/caminhao-de-entrega.png" alt="caminhão de frete" />
@@ -33,21 +49,25 @@
             ><span id="link-nossos-cafés" class="links">Nossos Cafés</span></a
           >
           <a href="#"
-            ><span id="link-saiba-mais" class="links">Saiba Mais</span></a
+            ><span
+              id="link-saiba-mais"
+              onclick="saibaMaisScroll()"
+              class="links"
+              >Saiba Mais</span
+            ></a
           >
 
           <input type="text" placeholder="Busque o sabor que te inspira" />
           <img id="lupa-nav" src="Imagens/lupa-icon.png" alt="lupa" />
 
           <button type="button" class="btn-buy">Compre Aqui</button>
-
           <img
             class="carrinho-nav"
             src="Imagens/carrinho-de-compras.png"
             alt="carriho de compras"
           />
 
-          <a href="#"><span class="links">Entrar</span></a>
+          <a href="#"><span class="links" onclick="btnEntrar()">Entrar</span></a>
           <a href="#"><span class="links">Registrar</span></a>
         </nav>
       </header>
@@ -92,9 +112,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(29)</span></a>
             </div>
 
@@ -103,13 +121,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -126,9 +138,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(21)</span></a>
             </div>
 
@@ -137,13 +147,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -160,9 +164,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(32)</span></a>
             </div>
 
@@ -171,13 +173,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -194,9 +190,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(18)</span></a>
             </div>
 
@@ -205,13 +199,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -228,9 +216,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(14)</span></a>
             </div>
 
@@ -239,13 +225,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -262,9 +242,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(11)</span></a>
             </div>
 
@@ -273,13 +251,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -296,9 +268,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(22)</span></a>
             </div>
 
@@ -307,13 +277,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -331,9 +295,7 @@
               </a>
             </div>
             <div>
-              <span class="estrelas-avaliação"
-                >★★★★★</span
-              >
+              <span class="estrelas-avaliação">★★★★★</span>
               <a href=""> <span class="numero-avaliação">(29)</span></a>
             </div>
 
@@ -342,13 +304,7 @@
             </div>
             <div>
               <button class="btn-produto-menos">-</button>
-              <input
-                class="input-produto"
-                type="number"
-                value="1"
-                min="1"
-                max="9"
-              />
+              <input class="input-produto" type="number" value="1" />
               <button class="btn-produto-mais">+</button>
               <button class="btn-produto-adicionar">Adicionar</button>
             </div>
@@ -408,12 +364,18 @@
           <div>
             <span>Cadastre-se para receber benefícios exclusivos.</span>
           </div>
-          <div>
-            <input type="email" name="input email" placeholder="E-mail*" />
-          </div>
-          <div>
-            <button type="button">Assinar</button>
-          </div>
+          <form id="form-assinatura">
+            <input
+              type="email"
+              id="email-input"
+              placeholder="e-mail*"
+              required
+            />
+            <div>
+              <button type="submit">Assinar</button>
+            </div>
+          </form>
+          <p id="mensagem-confirmacao"></p>
 
           <div>
             <ul>
@@ -455,5 +417,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

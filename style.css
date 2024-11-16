@@ -5,6 +5,7 @@
 	font-family: "Manrope";
 }
 
+
 body {
 	background-color: #fff;
 	display: flex;
@@ -187,13 +188,15 @@ nav {
 }
 
 .input-produto {
-	width: 30px;
+	width: 48px;
 	background-color: #f5f5f5;
 	border: 0px;
 	color: #923e12;
 	font-size: 22px;
 	font-weight: 600;
 	padding-left: 10px;
+	padding-right: 8px;
+	text-align: center;
 }
 
 .btn-produto-adicionar {
@@ -363,6 +366,75 @@ footer button {
 	border-radius: 6px;
 	color: #923e12;
 }
+
+
+#entrar-conta{
+	position: fixed;
+	z-index: 1000;
+    background-color: #f5f5f5;
+	min-height: 52%;
+	min-width: 30%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-radius: 1%;
+	border: #6e6e6e solid 1px;
+	display: none;
+}
+
+#entrar-conta div{
+	display: flex;
+	flex-direction: column;
+	padding: 10% 20%  ;
+	gap: 20px;
+
+}
+
+#text1-entrar{
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 22px;
+}
+
+#entrar-conta input{
+	height: 32px;
+	padding-left: 10px;
+}
+
+#entrar-conta button{
+	background-color: #437faa;
+	width: 42%;
+	padding: 8px;
+	border: none;
+	color: #fff;
+	border-radius: 28px;
+	margin: 0 auto;
+	display: block;
+	
+}
+#entrar-conta button:hover{
+	background-color: #275a7e;
+	cursor: pointer;
+}
+
+#div-cor-background{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+#entrar-conta img{
+	height: 18px;
+	margin: 4% 12% 0%;
+	margin-left: 92%;
+	cursor: pointer;
+}
+
+
+
 
 @media (max-width: 1090px) {
 	.sect-3-produtos {
