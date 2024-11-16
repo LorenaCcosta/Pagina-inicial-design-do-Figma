@@ -6,3 +6,6 @@ Criando uma pagina inicial em ***HTML*** e ***CSS***, a partir de um design cria
 
 # Status: 🚧 Projeto em construção (Em desenvolvimento)
 
+### Link da página: 
+https://lorenaccosta.github.io/Pagina-inicial-design-do-Figma/
+
