@@ -19,15 +19,20 @@
       <div id="div-cor-background">
       <form>
         <div id="entrar-conta">
-          <img id="fechar-form" src="Imagens/x.png" alt="">
+          <img id="fechar-form" onclick="fecharForm()" src="Imagens/x.png" alt="">
           <div>
             <span id="text1-entrar">Entre com sua conta</span>
-            <input type="email" name="email" id="email-div-entrar" placeholder="E-mail"/>
+            <input class="input-form" type="email" name="email" id="email-div-entrar" placeholder="E-mail" required/>
 
-            <input type="password" name="senha" id="senha-div-entrar" placeholder="Senha" />
-            <a href="#">Esqueci a Senha</a>
-            <span>Não tenha uma conta? <a href="">Registre uma.</a></span>
-            <button type="submit">Entrar</button>
+            <input type="password" name="senha" id="senha-div-entrar" placeholder="Senha" required maxlength ="12"/>
+            <label id="mostrar-senha">
+            <input type="checkbox" name="moostrar senha" id="mostrar-senha-checkbox" onclick="mostrarSenha()">Mostrar senha
+          </label>
+
+            <a href="#" id="esqueci-senha">Esqueci a senha</a>
+            <span id="registrar-conta">Não tenha uma conta? <a href="" >Registre uma.</a></span>
+            <button type="submit" onclick="btnEntrar(event)">Entrar</button>
+            <span id="senha-incorreta"></span>
           </div>
         </div>
       </form>
@@ -67,7 +72,7 @@
             alt="carriho de compras"
           />
 
-          <a href="#"><span class="links" onclick="btnEntrar()">Entrar</span></a>
+          <a href="#"><span class="links" onclick="abrirForm()">Entrar</span></a>
           <a href="#"><span class="links">Registrar</span></a>
         </nav>
       </header>

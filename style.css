@@ -377,30 +377,38 @@ footer button {
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-	border-radius: 1%;
-	border: #6e6e6e solid 1px;
+	border-radius: 2%;
+	border: #ebebeb solid 1px;
 	display: none;
 }
 
 #entrar-conta div{
 	display: flex;
 	flex-direction: column;
-	padding: 10% 20%  ;
-	gap: 20px;
+	padding: 10% 12%;
 
 }
 
 #text1-entrar{
 	font-size: 22px;
 	font-weight: 700;
-	margin-bottom: 22px;
+	margin-bottom: 28px;
 }
 
 #entrar-conta input{
 	height: 32px;
 	padding-left: 10px;
+	font-size: 16px;
+    font-weight: 500;
 }
 
+#esqueci-senha{
+	margin-bottom: 18px;
+}
+
+.input-form{
+	margin-bottom: 22px;
+}
 #entrar-conta button{
 	background-color: #437faa;
 	width: 42%;
@@ -410,6 +418,8 @@ footer button {
 	border-radius: 28px;
 	margin: 0 auto;
 	display: block;
+	font-weight: 600;
+	font-size: 14px;
 	
 }
 #entrar-conta button:hover{
@@ -422,7 +432,7 @@ footer button {
 	height: 100%;
 	width: 100%;
 	z-index: 1000;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	display: none;
 }
 
@@ -433,8 +443,29 @@ footer button {
 	cursor: pointer;
 }
 
+#mostrar-senha-checkbox{
+	width: 16px;
+	align-items: center;
+	display: flex;
+}
 
+#mostrar-senha{
+	display: flex;
+	align-items:  center;
+	gap: 8px;
+	margin-bottom: 18px;
+	margin-top: 10px;
+}
 
+#registrar-conta{
+	margin-bottom: 22px;
+}
+
+#senha-incorreta{
+	color: red;
+	font-size: 12px;
+	margin-top: 14px;
+}
 
 @media (max-width: 1090px) {
 	.sect-3-produtos {
