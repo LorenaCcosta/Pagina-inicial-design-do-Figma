@@ -106,6 +106,11 @@ nav.logo-nav,
 	color: #b7521c;
 	border-radius: 6px;
 	background-color: #fff;
+	cursor: pointer;
+}
+.btn-buy:hover{
+	background-color: #b7521c;
+	color: #fff;
 }
 
 nav {
@@ -393,6 +398,7 @@ footer button {
 	font-size: 22px;
 	font-weight: 700;
 	margin-bottom: 28px;
+	color: #923e12;
 }
 
 #entrar-conta input{
@@ -410,7 +416,7 @@ footer button {
 	margin-bottom: 22px;
 }
 #entrar-conta button{
-	background-color: #437faa;
+	background-color: #923e12;
 	width: 42%;
 	padding: 8px;
 	border: none;
@@ -423,7 +429,7 @@ footer button {
 	
 }
 #entrar-conta button:hover{
-	background-color: #275a7e;
+	background-color: #6f2700;
 	cursor: pointer;
 }
 
@@ -467,15 +473,51 @@ footer button {
 	margin-top: 14px;
 }
 
+
+
+.nossos-cafes{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+.div-nossos-cafes img{
+	max-width: 34%;
+	height: auto;
+
+}
+.div-nossos-cafes{
+	font-size: 12px;
+	padding: 12px;
+	
+}
+.div-nossos-cafes:hover{
+	background-color: #f5f5f5;
+	border-radius: 6px;
+}
+
+.sect-produtos{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 25px;
+	margin: 0px 20% 0% 20%;
+	padding: 1%;
+	padding-top: 1%;
+	display: none;
+}
+
+
 @media (max-width: 1090px) {
-	.sect-3-produtos {
+	.sect-3-produtos, .sect-produtos{
 		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.btn-buy {
 		display: none;
+	
 	}
 }
+
 
 @media (max-width: 975px) {
 	.img-texto {
@@ -529,13 +571,13 @@ footer button {
 }
 
 @media (max-width: 860px) {
-	.sect-3-produtos {
+	.sect-3-produtos, .sect-produtos {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (max-width: 520px) {
-	.sect-3-produtos {
+	.sect-3-produtos, .sect-produtos {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
