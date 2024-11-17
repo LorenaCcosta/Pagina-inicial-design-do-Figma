@@ -4,9 +4,9 @@ function saibaMaisScroll() {
 }
 
 // Função para rolar a página até os produtos
-function btnComprar() {
-  const compreAqui = document.getElementsByClassName("sect-3-produtos")[0];
-  if (compreAqui) compreAqui.scrollIntoView({ behavior: "smooth" });
+function btnComprar(){
+  var compreAqui = document.getElementsByClassName("sect-3-produtos")[0];
+  compreAqui.scrollIntoView({ behavior: "smooth" });
 }
 
 // Função para abrir o formulário de login
@@ -45,9 +45,33 @@ function btnEntrar(event) {
       'Senha Incorreta. Por favor, tente novamente. Caso se esqueceu da senha, clique em "esqueci a senha".';
   }
 }
-
-function nossosCafes(){
+//Mostrar lista ao passar o mouse em "Nossos Cafés"
+function mostrarLista(){
   document.querySelector('.nossos-cafes').style.display = 'grid';
 
   document.querySelector('.sect-produtos').style.display = 'grid';
+}
+//Esconder a lista
+function esconderLista(){
+  document.querySelector('.nossos-cafes').style.display = 'none';
+
+  document.querySelector('.sect-produtos').style.display = 'none';
+}
+//Adicionar quantidade do input
+function adicionarQuantidade(botao) {
+  
+  var inputQtd = botao.parentNode.querySelector('.input-produto');
+  
+  if (inputQtd) {
+    inputQtd.value = parseInt(inputQtd.value) + 1;
+  }
+}
+//Retirar quantidade do input
+function adicionarQuantidade(botao) {
+  
+  var inputQtd = botao.parentNode.querySelector('.input-produto');
+  
+  if (inputQtd) {
+    inputQtd.value = parseInt(inputQtd.value) - 1;
+  }
 }
