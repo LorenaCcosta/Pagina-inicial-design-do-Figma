@@ -15,28 +15,64 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="item-carrinho-compra">
+      <div>
+        <img src="Imagens/coffee-American.png" alt="" />
+      </div>
+      <div>
+        <span id="nome-produto-lista"></span>
+        <span>preço</span>
+      </div>
+    </div>
     <div>
       <div id="div-cor-background">
-      <form>
-        <div id="entrar-conta">
-          <img id="fechar-form" onclick="fecharForm()" src="Imagens/x.png" alt="">
-          <div>
-            <span id="text1-entrar">Entre com sua conta</span>
-            <input class="input-form" type="email" name="email" id="email-div-entrar" placeholder="E-mail" required/>
+        <form method="post">
+          <div id="entrar-conta">
+            <img
+              id="fechar-form"
+              onclick="fecharForm()"
+              src="Imagens/x.png"
+              alt=""
+            />
+            <div>
+              <span id="text1-entrar">Entre com sua conta</span>
+              <input
+                class="input-form"
+                type="email"
+                name="email"
+                id="email-div-entrar"
+                placeholder="E-mail"
+                required
+              />
 
-            <input type="password" name="senha" id="senha-div-entrar" placeholder="Senha" required maxlength ="12"/>
-            <label id="mostrar-senha">
-            <input type="checkbox" name="moostrar senha" id="mostrar-senha-checkbox" onclick="mostrarSenha()">Mostrar senha
-          </label>
+              <input
+                type="password"
+                name="senha"
+                id="senha-div-entrar"
+                placeholder="Senha"
+                required
+                maxlength="12"
+              />
+              <label id="mostrar-senha">
+                <input
+                  type="checkbox"
+                  name="moostrar senha"
+                  id="mostrar-senha-checkbox"
+                  onclick="mostrarSenha()"
+                />Mostrar senha
+              </label>
 
-            <a href="#" id="esqueci-senha">Esqueci a senha</a>
-            <span id="registrar-conta">Não tenha uma conta? <a href="" >Registre uma.</a></span>
-            <button type="submit" onclick="btnEntrar(event)">Entrar</button>
-            <span id="senha-incorreta"></span>
+              <a href="#" id="esqueci-senha">Esqueci a senha</a>
+              <span id="registrar-conta"
+                >Não tenha uma conta? <a href="">Registre uma.</a></span
+              >
+              <button type="submit" onclick="btnEntrar(event)">Entrar</button>
+              <span id="senha-incorreta"></span>
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
+
       <header>
         <div onmouseout="esconderLista()" class="info-frete">
           <img src="imagens/caminhao-de-entrega.png" alt="caminhão de frete" />
@@ -51,7 +87,12 @@
               alt="logo"
           /></a>
           <a href="#"
-            ><span id="link-nossos-cafés" class="links" onmouseover="mostrarLista()">Nossos Cafés</span></a
+            ><span
+              id="link-nossos-cafés"
+              class="links"
+              onmouseover="mostrarLista()"
+              >Nossos Cafés</span
+            ></a
           >
           <a href="#"
             ><span
@@ -65,72 +106,72 @@
           <input type="text" placeholder="Busque o sabor que te inspira" />
           <img id="lupa-nav" src="Imagens/lupa-icon.png" alt="lupa" />
 
-          <button onclick="btnComprar()" type="button" class="btn-buy">Compre Aqui</button>
+          <button onclick="btnComprar()" type="button" class="btn-buy">
+            Compre Aqui
+          </button>
           <img
             class="carrinho-nav"
             src="Imagens/carrinho-de-compras.png"
             alt="carriho de compras"
           />
-
-          <a href="#"><span class="links" onclick="abrirForm()">Entrar</span></a>
+          <span id="qtd-carrinho">0</span>
+          <a href="#"
+            ><span class="links" onclick="abrirForm()">Entrar</span></a
+          >
           <a href="#"><span class="links">Registrar</span></a>
         </nav>
       </header>
 
-      <div class="nossos-cafes"> 
-      <div class="sect-produtos">
-        <div class="div-nossos-cafes" id="cafe">
-          <div>
-            <a href="#">
-              <img src="Imagens/coffee-Arabic.png" alt="café arabic" />
-            </a>
+      <div class="nossos-cafes">
+        <div class="sect-produtos">
+          <div class="div-nossos-cafes" id="cafe">
+            <div>
+              <a href="#">
+                <img src="Imagens/coffee-Arabic.png" alt="café arabic" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
+              </a>
+            </div>
           </div>
-          <div>
-            <a href="">
-              <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
-            </a>
+          <div class="div-nossos-cafes">
+            <div>
+              <a href="#">
+                <img src="Imagens/coffee-Italian.png" alt="café Italian" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <span>Multicoffe Italian Coffee Torrado e Moído - 350g</span>
+              </a>
+            </div>
           </div>
-          
-        </div>
-        <div class="div-nossos-cafes">
-          <div>
-            <a href="#">
-              <img src="Imagens/coffee-Italian.png" alt="café Italian" />
-            </a>
+          <div class="div-nossos-cafes">
+            <div>
+              <a href="#">
+                <img src="Imagens/coffee-Viennese.png" alt="café Viennese" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <span>Multicoffe Viennese Coffee Torrado e Moído - 350g</span>
+              </a>
+            </div>
           </div>
-          <div>
-            <a href="">
-              <span>Multicoffe Italian Coffee Torrado e Moído - 350g</span>
-            </a>
+          <div class="div-nossos-cafes">
+            <div>
+              <a href="#">
+                <img src="Imagens/coffee-American.png" alt="café American" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <span>Multicoffe American Coffee Torrado e Moído - 350g</span>
+              </a>
+            </div>
           </div>
-          
-        </div>
-        <div class="div-nossos-cafes">
-          <div>
-            <a href="#">
-              <img src="Imagens/coffee-Viennese.png" alt="café Viennese" />
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <span>Multicoffe Viennese Coffee Torrado e Moído - 350g</span>
-            </a>
-          </div>
-          
-        </div>
-        <div class="div-nossos-cafes">
-          <div>
-            <a href="#">
-              <img src="Imagens/coffee-American.png" alt="café American" />
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <span>Multicoffe American Coffee Torrado e Moído - 350g</span>
-            </a>
-          </div>
-          
-        </div>
         </div>
       </div>
 
@@ -182,10 +223,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
-              <input class="input-produto" type="number" value="1" min="1"/>
-              <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
+              <input class="input-produto" type="number" value="1" min="1" />
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
           <div class="produtos">
@@ -208,10 +261,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
               <input class="input-produto" type="number" value="1" />
-             <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
           <div class="produtos">
@@ -234,10 +299,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
               <input class="input-produto" type="number" value="1" />
-             <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
           <div class="produtos">
@@ -260,10 +337,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
               <input class="input-produto" type="number" value="1" />
-             <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
           <div class="produtos">
@@ -286,10 +375,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
               <input class="input-produto" type="number" value="1" />
-             <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
           <div class="produtos">
@@ -312,10 +413,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
               <input class="input-produto" type="number" value="1" />
-             <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
           <div class="produtos">
@@ -338,10 +451,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
               <input class="input-produto" type="number" value="1" />
-             <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
 
@@ -365,10 +490,22 @@
               <p>R$ 39,99</p>
             </div>
             <div>
-              <button class="btn-produto-menos">-</button>
+              <button
+                class="btn-produto-menos"
+                onclick="diminuirQuantidade(this)"
+              >
+                -
+              </button>
               <input class="input-produto" type="number" value="1" />
-             <button class="btn-produto-mais" onclick="adicionarQuantidade(this)">+</button>
-              <button class="btn-produto-adicionar">Adicionar</button>
+              <button
+                class="btn-produto-mais"
+                onclick="adicionarQuantidade(this)"
+              >
+                +
+              </button>
+              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                Adicionar
+              </button>
             </div>
           </div>
         </section>
@@ -472,14 +609,12 @@
               />
             </a>
           </div>
-
           <div>
             <span>www.multicoffe.com.br</span>
           </div>
         </div>
       </footer>
     </div>
-
     <script src="index.js"></script>
   </body>
 </html>
