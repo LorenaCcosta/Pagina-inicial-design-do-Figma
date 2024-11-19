@@ -239,13 +239,15 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .numero-paginas {
   background-color: #923e12;
-  width: 182px;
-  min-height: 34px;
+  width: 176px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  gap: 14px;
+  gap: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .btn {
@@ -253,28 +255,16 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #fff;
   background-color: #923e12;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-.btn-ativo {
+.btn:hover{
   background-color: #fff;
-  border-radius: 20px;
-  font-size: 20px;
-  border: 0;
-  font-weight: 600;
-  min-width: 28px;
   color: #923e12;
-}
-
-.btn-ultimo {
-  background-color: #923e12;
-  border-radius: 20px;
-  font-size: 20px;
-  border: 0;
-  font-weight: 600;
-  min-width: 28px;
-  color: #fff;
+  width: 24px;
 }
 
 .sect-numeros-paginas {
@@ -528,6 +518,11 @@ footer button {
   position: relative;
   right: 22px;
   top: 12px;
+}
+
+
+#ul-footer a{
+  color: #fff;
 }
 
 @media (max-width: 1090px) {
