@@ -1,620 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="item-carrinho-compra">
-      <div>
-        <img src="Imagens/coffee-American.png" alt="" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div id="item-carrinho-compra">
+         <div>
+            <img src="Imagens/coffee-American.png" alt="" />
+         </div>
+         <div>
+            <span id="nome-produto-lista"></span>
+            <span>preço</span>
+         </div>
       </div>
       <div>
-        <span id="nome-produto-lista"></span>
-        <span>preço</span>
+         <div id="div-cor-background">
+            <form method="post">
+               <div id="entrar-conta">
+                  <img
+                     id="fechar-form"
+                     onclick="fecharForm()"
+                     src="Imagens/x.png"
+                     alt=""
+                     />
+                  <div>
+                     <span id="text1-entrar">Entre com sua conta</span>
+                     <input
+                        class="input-form"
+                        type="email"
+                        name="email"
+                        id="email-div-entrar"
+                        placeholder="E-mail"
+                        required
+                        />
+                     <input
+                        type="password"
+                        name="senha"
+                        id="senha-div-entrar"
+                        placeholder="Senha"
+                        required
+                        maxlength="12"
+                        />
+                     <label id="mostrar-senha">
+                     <input
+                        type="checkbox"
+                        name="moostrar senha"
+                        id="mostrar-senha-checkbox"
+                        onclick="mostrarSenha()"
+                        />Mostrar senha
+                     </label>
+                     <a href="#" id="esqueci-senha">Esqueci a senha</a>
+                     <span id="registrar-conta"
+                        >Não tenha uma conta? <a href="">Registre uma.</a></span
+                        >
+                     <button type="submit" onclick="btnEntrar(event)">Entrar</button>
+                     <span id="senha-incorreta"></span>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <header>
+            <div onmouseout="esconderLista()" class="info-frete">
+               <img src="imagens/caminhao-de-entrega.png" alt="caminhão de frete" />
+               <p>FRETE GRÁTIS PARA PEDIDOS ACIMA DE R$ 80</p>
+            </div>
+            <nav class="nav-logo-pesquisa">
+               <a href="#"
+                  ><img
+                  class="logo-nav"
+                  src="Imagens/Logo-fundo-branco.png"
+                  alt="logo"
+                  /></a>
+               <a href="#"
+                  ><span
+                  id="link-nossos-cafés"
+                  class="links"
+                  onmouseover="mostrarLista()"
+                  >Nossos Cafés</span
+                  ></a
+                  >
+               <a href="#"
+                  ><span
+                  id="link-saiba-mais"
+                  onclick="saibaMaisScroll()"
+                  class="links"
+                  >Saiba Mais</span
+                  ></a
+                  >
+               <input type="text" placeholder="Busque o sabor que te inspira" />
+               <img id="lupa-nav" src="Imagens/lupa-icon.png" alt="lupa" />
+               <button onclick="btnComprar()" type="button" class="btn-buy">
+               Compre Aqui
+               </button>
+               <img
+                  class="carrinho-nav"
+                  src="Imagens/carrinho-de-compras.png"
+                  alt="carriho de compras"
+                  />
+               <span id="qtd-carrinho">0</span>
+               <a href="#"
+                  ><span class="links" onclick="abrirForm()">Entrar</span></a
+                  >
+               <a href="#"><span class="links">Registrar</span></a>
+            </nav>
+         </header>
+         <div class="nossos-cafes">
+            <div class="sect-produtos">
+               <div class="div-nossos-cafes" id="cafe">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Arabic.png" alt="café arabic" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="div-nossos-cafes">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Italian.png" alt="café Italian" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Italian Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="div-nossos-cafes">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Viennese.png" alt="café Viennese" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Viennese Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="div-nossos-cafes">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-American.png" alt="café American" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe American Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <article>
+            <section onmouseout="esconderLista()" class="sect-1-texto">
+               <div class="h3-p">
+                  <h3>Para todos os Tipos de Gosto e Sabores</h3>
+                  <p>
+                     Aprecie um café delicioso e fresco preparado em sua casa com grãos
+                     de cafés selecionados Multicoffe .
+                  </p>
+               </div>
+               <img
+                  id="grãos-café"
+                  src="Imagens/graos-de-cafe.png"
+                  alt="grãos de café caindo"
+                  />
+            </section>
+            <section class="sect-2-filtro">
+               <h3>Conheça Nossa Linha Completa</h3>
+               <div>
+                  <ul>
+                     <li id="Filtar-id"><strong>Filtar por:</strong></li>
+                     <li>Tipo de café</li>
+                     <li>Tipo de Torra</li>
+                     <li>Origem</li>
+                  </ul>
+               </div>
+            </section>
+            <section class="sect-3-produtos">
+               <div class="produtos">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Arabic.png" alt="café arabic" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(29)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" min="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+               <div class="produtos">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Italian.png" alt="café Italian" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Italian Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(21)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+               <div class="produtos">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Viennese.png" alt="café Viennese" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Viennese Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(32)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+               <div class="produtos">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-American.png" alt="café American" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe American Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(18)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+               <div class="produtos">
+                  <div class="kit-café">
+                     <a href="#">
+                     <img src="Imagens/kit-cafe.png" alt="kit café" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe kit Buena Coffee Torrado e Moído 15% OFF</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(14)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+               <div class="produtos">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-colombian.png" alt="café Colombian" id="img-cafe-colombia"/>
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Colombian Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(11)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+               <div class="produtos">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Kenya.png" alt="café Kenya" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Kenya Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(22)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+               <div class="produtos">
+                  <div>
+                     <a href="#">
+                     <img src="Imagens/coffee-Arabic.png" alt="café arabico" />
+                     </a>
+                  </div>
+                  <div>
+                     <a href="">
+                     <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
+                     </a>
+                  </div>
+                  <div>
+                     <span class="estrelas-avaliação">★★★★★</span>
+                     <a href=""> <span class="numero-avaliação">(29)</span></a>
+                  </div>
+                  <div>
+                     <p>R$ 39,99</p>
+                  </div>
+                  <div>
+                     <button
+                        class="btn-produto-menos"
+                        onclick="diminuirQuantidade(this)"
+                        >
+                     -
+                     </button>
+                     <input class="input-produto" type="number" value="1" />
+                     <button
+                        class="btn-produto-mais"
+                        onclick="adicionarQuantidade(this)"
+                        >
+                     +
+                     </button>
+                     <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
+                     Adicionar
+                     </button>
+                  </div>
+               </div>
+            </section>
+            <section class="sect-numeros-paginas">
+               <div class="numero-paginas">
+                  <button class="btn">1</button>
+                  <button class="btn">2</button>
+                  <button class="btn">3</button>
+                  <button class="btn">4</button>
+                  <button class="btn">5</button>
+                  <button class="btn">6</button>
+               </div>
+            </section>
+            <div class="texto-h2">
+               <h2>Saiba Mais</h2>
+            </div>
+            <section>
+               <div class="img-texto">
+                  <div class="texto-sobre-img">
+                     <a href="#" class="img-section">
+                     <img src="Imagens/pe-de-cafe.jpg" alt="pé de café" />
+                     </a>
+                     <span class="texto-com-img"
+                        >COMO SEPARAMOS OS MELHORES GRÃOS DE CAFÉ</span
+                        >
+                  </div>
+                  <div class="texto-sobre-img">
+                     <a href="#" class="img-section">
+                     <img src="Imagens/plantacao-cafe.png" alt="pé de café" />
+                     </a>
+                     <span class="texto-com-img">SUSTENTABILIDADE E PRATICIDADE</span>
+                  </div>
+                  <div class="texto-sobre-img">
+                     <a href="#" class="img-section">
+                     <img src="Imagens/graos-cafe-torrado.jpg" alt="pé de café" />
+                     </a>
+                     <span class="texto-com-img">O MELHOR PARA VOCÊ TODO DIA</span>
+                  </div>
+               </div>
+               <div class="logo-footer">
+                  <img
+                     class="logo-footer-1"
+                     src="Imagens/logo-branco.png"
+                     alt="logo"
+                     />
+               </div>
+            </section>
+         </article>
+         <footer>
+            <div class="contrato-footer">
+               <div>
+                  <span>Cadastre-se para receber benefícios exclusivos.</span>
+               </div>
+               <form id="form-assinatura">
+                  <input
+                     type="email"
+                     id="email-input"
+                     placeholder="E-mail*"
+                     required
+                     />
+                     <div> <p id="paragrafo-footer-email"></p></div>
+                  <div>
+                     <button type="submit" id="btn-email-submit" onclick="btnEmail()">Assinar</button>
+                  </div>
+               </form>
+               <p id="mensagem-confirmacao"></p>
+               <div>
+                  <ul id="ul-footer">
+                     <a href="#">
+                        <li>Cookies</li>
+                     </a>
+                     <a href="#">
+                        <li>Politica de Privacidade</li>
+                     </a>
+                     <a href="#">
+                        <li>Termos e Condições de Uso</li>
+                     </a>
+                  </ul>
+               </div>
+               <div>
+                  <a href="#">
+                  <img
+                     id="icon-facebook"
+                     src="Imagens/facebook-icon.png"
+                     alt="icone do Facebook"
+                     />
+                  </a>
+                  <a href="#">
+                  <img
+                     id="icon-youtube"
+                     src="Imagens/youtube-icon.png"
+                     alt="icone do youtube"
+                     />
+                  </a>
+                  <a href="#">
+                  <img
+                     id="icon-instagram"
+                     src="Imagens/instagram-icon.png"
+                     alt="icone do instagram"
+                     />
+                  </a>
+               </div>
+               <div id="link-site">
+                  <a href="#">www.multicoffe.com.br</a>
+               </div>
+            </div>
+         </footer>
       </div>
-    </div>
-    <div>
-      <div id="div-cor-background">
-        <form method="post">
-          <div id="entrar-conta">
-            <img
-              id="fechar-form"
-              onclick="fecharForm()"
-              src="Imagens/x.png"
-              alt=""
-            />
-            <div>
-              <span id="text1-entrar">Entre com sua conta</span>
-              <input
-                class="input-form"
-                type="email"
-                name="email"
-                id="email-div-entrar"
-                placeholder="E-mail"
-                required
-              />
-
-              <input
-                type="password"
-                name="senha"
-                id="senha-div-entrar"
-                placeholder="Senha"
-                required
-                maxlength="12"
-              />
-              <label id="mostrar-senha">
-                <input
-                  type="checkbox"
-                  name="moostrar senha"
-                  id="mostrar-senha-checkbox"
-                  onclick="mostrarSenha()"
-                />Mostrar senha
-              </label>
-
-              <a href="#" id="esqueci-senha">Esqueci a senha</a>
-              <span id="registrar-conta"
-                >Não tenha uma conta? <a href="">Registre uma.</a></span
-              >
-              <button type="submit" onclick="btnEntrar(event)">Entrar</button>
-              <span id="senha-incorreta"></span>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <header>
-        <div onmouseout="esconderLista()" class="info-frete">
-          <img src="imagens/caminhao-de-entrega.png" alt="caminhão de frete" />
-          <p>FRETE GRÁTIS PARA PEDIDOS ACIMA DE R$ 80</p>
-        </div>
-
-        <nav class="nav-logo-pesquisa">
-          <a href="#"
-            ><img
-              class="logo-nav"
-              src="Imagens/Logo-fundo-branco.png"
-              alt="logo"
-          /></a>
-          <a href="#"
-            ><span
-              id="link-nossos-cafés"
-              class="links"
-              onmouseover="mostrarLista()"
-              >Nossos Cafés</span
-            ></a
-          >
-          <a href="#"
-            ><span
-              id="link-saiba-mais"
-              onclick="saibaMaisScroll()"
-              class="links"
-              >Saiba Mais</span
-            ></a
-          >
-
-          <input type="text" placeholder="Busque o sabor que te inspira" />
-          <img id="lupa-nav" src="Imagens/lupa-icon.png" alt="lupa" />
-
-          <button onclick="btnComprar()" type="button" class="btn-buy">
-            Compre Aqui
-          </button>
-          <img
-            class="carrinho-nav"
-            src="Imagens/carrinho-de-compras.png"
-            alt="carriho de compras"
-          />
-          <span id="qtd-carrinho">0</span>
-          <a href="#"
-            ><span class="links" onclick="abrirForm()">Entrar</span></a
-          >
-          <a href="#"><span class="links">Registrar</span></a>
-        </nav>
-      </header>
-
-      <div class="nossos-cafes">
-        <div class="sect-produtos">
-          <div class="div-nossos-cafes" id="cafe">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Arabic.png" alt="café arabic" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-          </div>
-          <div class="div-nossos-cafes">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Italian.png" alt="café Italian" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Italian Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-          </div>
-          <div class="div-nossos-cafes">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Viennese.png" alt="café Viennese" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Viennese Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-          </div>
-          <div class="div-nossos-cafes">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-American.png" alt="café American" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe American Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <article>
-        <section onmouseout="esconderLista()" class="sect-1-texto">
-          <div class="h3-p">
-            <h3>Para todos os Tipos de Gosto e Sabores</h3>
-            <p>
-              Aprecie um café delicioso e fresco preparado em sua casa com grãos
-              de cafés selecionados Multicoffe .
-            </p>
-          </div>
-          <img
-            id="grãos-café"
-            src="Imagens/graos-de-cafe.png"
-            alt="grãos de café caindo"
-          />
-        </section>
-
-        <section class="sect-2-filtro">
-          <h3>Conheça Nossa Linha Completa</h3>
-          <div>
-            <ul>
-              <li id="Filtar-id"><strong>Filtar por:</strong></li>
-              <li>Tipo de café</li>
-              <li>Tipo de Torra</li>
-              <li>Origem</li>
-            </ul>
-          </div>
-        </section>
-        <section class="sect-3-produtos">
-          <div class="produtos">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Arabic.png" alt="café arabic" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(29)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" min="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-          <div class="produtos">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Italian.png" alt="café Italian" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Italian Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(21)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-          <div class="produtos">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Viennese.png" alt="café Viennese" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Viennese Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(32)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-          <div class="produtos">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-American.png" alt="café American" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe American Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(18)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-          <div class="produtos">
-            <div class="kit-café">
-              <a href="#">
-                <img src="Imagens/kit-cafe.png" alt="kit café" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe kit Buena Coffee Torrado e Moído 15% OFF</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(14)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-          <div class="produtos">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-colombian.png" alt="café Colombian" id="img-cafe-colombia"/>
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Colombian Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(11)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-          <div class="produtos">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Kenya.png" alt="café Kenya" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Kenya Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(22)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-
-          <div class="produtos">
-            <div>
-              <a href="#">
-                <img src="Imagens/coffee-Arabic.png" alt="café arabico" />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <span>Multicoffe Arabic Coffee Torrado e Moído - 350g</span>
-              </a>
-            </div>
-            <div>
-              <span class="estrelas-avaliação">★★★★★</span>
-              <a href=""> <span class="numero-avaliação">(29)</span></a>
-            </div>
-
-            <div>
-              <p>R$ 39,99</p>
-            </div>
-            <div>
-              <button
-                class="btn-produto-menos"
-                onclick="diminuirQuantidade(this)"
-              >
-                -
-              </button>
-              <input class="input-produto" type="number" value="1" />
-              <button
-                class="btn-produto-mais"
-                onclick="adicionarQuantidade(this)"
-              >
-                +
-              </button>
-              <button class="btn-produto-adicionar" onclick="addCarrinho(this)">
-                Adicionar
-              </button>
-            </div>
-          </div>
-        </section>
-        <section class="sect-numeros-paginas">
-          <div class="numero-paginas">
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-          </div>
-        </section>
-
-        <div class="texto-h2">
-          <h2>Saiba Mais</h2>
-        </div>
-
-        <section>
-          <div class="img-texto">
-            <div class="texto-sobre-img">
-              <a href="#" class="img-section">
-                <img src="Imagens/pe-de-cafe.jpg" alt="pé de café" />
-              </a>
-              <span class="texto-com-img"
-                >COMO SEPARAMOS OS MELHORES GRÃOS DE CAFÉ</span
-              >
-            </div>
-
-            <div class="texto-sobre-img">
-              <a href="#" class="img-section">
-                <img src="Imagens/plantacao-cafe.png" alt="pé de café" />
-              </a>
-              <span class="texto-com-img">SUSTENTABILIDADE E PRATICIDADE</span>
-            </div>
-
-            <div class="texto-sobre-img">
-              <a href="#" class="img-section">
-                <img src="Imagens/graos-cafe-torrado.jpg" alt="pé de café" />
-              </a>
-              <span class="texto-com-img">O MELHOR PARA VOCÊ TODO DIA</span>
-            </div>
-          </div>
-          <div class="logo-footer">
-            <img
-              class="logo-footer-1"
-              src="Imagens/logo-branco.png"
-              alt="logo"
-            />
-          </div>
-        </section>
-      </article>
-      <footer>
-        <div class="contrato-footer">
-          <div>
-            <span>Cadastre-se para receber benefícios exclusivos.</span>
-          </div>
-          <form id="form-assinatura">
-            <input
-              type="email"
-              id="email-input"
-              placeholder="e-mail*"
-              required
-            />
-            <div>
-              <button type="submit">Assinar</button>
-            </div>
-          </form>
-          <p id="mensagem-confirmacao"></p>
-
-          <div>
-            <ul id="ul-footer">
-              <a href="#"><li>Cookies</li></a>
-              <a href="#"><li>Politica de Privacidade</li></a>
-              <a href="#"><li>Termos e Condições de Uso</li></a>
-            </ul>
-          </div>
-
-          <div>
-            <a href="#">
-              <img
-                id="icon-facebook"
-                src="Imagens/facebook-icon.png"
-                alt="icone do Facebook"
-              />
-            </a>
-
-            <a href="#">
-              <img
-                id="icon-youtube"
-                src="Imagens/youtube-icon.png"
-                alt="icone do youtube"
-              />
-            </a>
-
-            <a href="#">
-              <img
-                id="icon-instagram"
-                src="Imagens/instagram-icon.png"
-                alt="icone do instagram"
-              />
-            </a>
-          </div>
-          <div id="link-site">
-            <a href="#">www.multicoffe.com.br</a>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script src="index.js"></script>
-  </body>
+      <script src="index.js"></script>
+   </body>
 </html>
