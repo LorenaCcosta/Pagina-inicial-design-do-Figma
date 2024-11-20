@@ -26,12 +26,12 @@ h3 {
 }
 
 a:visited {
-  color: #923e12;
+  color: #b7521c;
 }
 
 a {
   text-decoration: none;
-  color: #923e12;
+  color: #b7521c;
 }
 
 .info-frete img {
@@ -513,16 +513,11 @@ footer button {
 
 #qtd-carrinho {
   display: flex;
-  color: #fff;
-  background-color: #923e12;
-  width: 22px;
-  height: 22px;
+  color: #b7521c;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   position: relative;
-  right: 22px;
-  top: 12px;
+  right: 10px;
+  font-size: 18px;
 }
 
 
