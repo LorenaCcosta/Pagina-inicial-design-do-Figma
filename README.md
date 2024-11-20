@@ -4,8 +4,6 @@ Criando uma pagina inicial em ***HTML*** e ***CSS***, a partir de um design cria
 📌Link do meu design no Figma, para quem quiser ver: 
 <https://www.figma.com/design/T6btAooBr5aHjBL0rIFvL6/Untitled?node-id=1-2&t=E0Sg6nNT47SkmxDE-1>
 
-# Status: 🚧 Projeto em construção (Em desenvolvimento)
-
 ### Link da página: 
 https://lorenaccosta.github.io/Pagina-inicial-design-do-Figma/
 
